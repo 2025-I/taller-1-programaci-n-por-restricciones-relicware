@@ -1,0 +1,26 @@
+%Tablero 4x4
+N = 4;
+
+% Matriz start:
+start = array2d(1..N, 1..N, [
+  0, 0, 0, 0,
+  0, 0, 0, 0,
+  0, 0, 0, 0,
+  0, 0, 0, 0
+]);
+
+% Matriz white:
+% true -> celda jugable
+% false -> celda no jugable (celda negra)
+white = array2d(1..N, 1..N, [
+  true,  false, true,  false,
+  false, true,  false, true,
+  true,  false, false, true,
+  false, true,  true,  false
+]);
+
+% Sumas de cada fila
+suma_fila = [9, 11, 9, 7];
+
+% Sumas de cada columna
+suma_columna = [6, 9, 8, 13];

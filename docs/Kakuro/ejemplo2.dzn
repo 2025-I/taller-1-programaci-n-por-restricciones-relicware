@@ -1,0 +1,30 @@
+%Tablero 6x6
+N = 6;
+
+% Matriz start:
+start = array2d(1..N, 1..N, [
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0
+]);
+
+% Matriz white:
+% true -> celda jugable
+% false -> celda no jugable (celda negra)
+white = array2d(1..N, 1..N, [
+  true,  false, true,  true,  false, false,
+  false, true,  true,  false, true,  false,
+  true,  true,  false, false, true,  true,
+  false, true,  false, true,  false, true,
+  true,  false, true,  false, true,  false,
+  false, false, true,  true,  false, true
+]);
+
+% Sumas de cada fila
+suma_fila = [14, 17, 16, 15, 16, 14];
+
+% Sumas de cada columna
+suma_columna = [14, 11, 22, 16, 23, 6];

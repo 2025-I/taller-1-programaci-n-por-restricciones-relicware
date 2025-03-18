@@ -1,0 +1,28 @@
+%Tablero 5x5
+N = 5;
+
+% Matriz start:
+start = array2d(1..N, 1..N, [
+  0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0
+]);
+
+% Matriz white:
+% true -> celda jugable
+% false -> celda no jugable (celda negra)
+white = array2d(1..N, 1..N, [
+  true,  false, true,  true,  false,
+  false, true,  true,  false, true,
+  true,  true,  false, true,  false,
+  true,  false, true,  true,  true,
+  false, true,  false, true,  true
+]);
+
+% Sumas de cada fila
+suma_fila = [14, 17, 14, 16, 14];
+
+% Sumas de cada columna
+suma_columna = [11, 11, 13, 27, 13];

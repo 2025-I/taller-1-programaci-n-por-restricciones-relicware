@@ -1,0 +1,20 @@
+# Archivos de salida generados por MiniZinc
+*.solution
+*.sol
+*.log
+*.out
+
+# Archivos temporales y de backup
+*~
+*.swp
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Carpetas de configuración de IDEs comunes
+.vscode/
+.idea/
+
+# Otros directorios o archivos temporales
+.cache/
